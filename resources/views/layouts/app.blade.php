@@ -11,7 +11,7 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-<div id="app" class="{{ $name }}-page">
+<div id="app" class="{{ $name ?? 'default' }}-page">
     @include('layouts._header')
     <div class="container">
         @yield('content')
